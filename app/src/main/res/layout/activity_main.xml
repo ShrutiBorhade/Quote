@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#091B81"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    app:cardElevation="11dp"
+    app:cardCornerRadius="11dp"
+    android:backgroundTint="#D62D2D"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:gravity="center"/>
+
+
+        <ImageButton
+            android:id="@+id/addToFavoritesButton"
+            android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/baseline_favorite_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#fff"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Share"
+        android:textColor="#000"
+        android:backgroundTint="#fff"/>
+
+    <Button
+        android:id="@+id/viewFavouritePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:text="Favourites"
+        android:backgroundTint="#fff"/>
+
+
+</LinearLayout>
